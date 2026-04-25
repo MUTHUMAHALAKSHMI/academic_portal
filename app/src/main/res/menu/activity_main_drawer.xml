@@ -12,14 +12,6 @@
             android:id="@+id/profileSendNotification"
             android:icon="@drawable/ic_baseline_notifications_24"
             android:title="Notification" />
-        <item
-            android:id="@+id/privacyPolicy"
-            android:icon="@drawable/ic_baseline_privacy"
-            android:title="Privacy Policy" />
-        <item
-            android:id="@+id/aboutUs"
-            android:icon="@drawable/aboutus"
-            android:title="About us" />
 
         <item
             android:id="@+id/resetPassword"

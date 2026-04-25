@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgactivity"
+    android:padding="20dp"
+    tools:context=".Activity.Attendance.DeleteAttendanceFacultyActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Attendance"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="4dp"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/attendance_alert"
+        android:textColor="#3F51B5"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:layout_marginBottom="20dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerDeleteAttendanceDate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/round_button"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnDeleteAttendanceNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DELETE ATTENDANCE"
+        android:background="@drawable/round_button"
+        android:textColor="@color/white"
+        app:backgroundTint="@null"/>
+
+</LinearLayout>

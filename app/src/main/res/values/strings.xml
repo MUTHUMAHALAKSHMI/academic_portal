@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">IIMTU Student</string>
+    <string name="app_name">Academic Portal</string>
     <string name="OpenDrawer">Open navigation drawer</string>
     <string name="CloseDrawer">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>

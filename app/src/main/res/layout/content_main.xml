@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_marginTop="56dp"
-    android:background="@drawable/bg">
+    android:background="@drawable/bgactivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -202,7 +202,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/presentation"
+                    android:background="@drawable/immigration"
                     android:padding="15dp"/>
 
                 <View
@@ -213,7 +213,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Lecture"
+                    android:text="Edit Profile"
                     android:textColor="@color/card_view_text"
                     android:gravity="center"
                     android:textStyle="bold"/>

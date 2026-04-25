@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgactivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAdministrator"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:title="Administrator"
+        app:titleTextColor="@color/black" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/btnCreateBranch"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="15dp"
+                android:text="Create Branch"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:backgroundTint="#4CAF50"
+                app:cornerRadius="8dp" />
+
+            <Button
+                android:id="@+id/btnCreateSemester"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="15dp"
+                android:text="Create Semester"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:backgroundTint="#2196F3"
+                app:cornerRadius="8dp" />
+
+            <Button
+                android:id="@+id/btnCreateSection"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="15dp"
+                android:text="Create Section"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:backgroundTint="#9C27B0"
+                app:cornerRadius="8dp" />
+
+            <Button
+                android:id="@+id/btnCreateSubject"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="15dp"
+                android:text="Create Subject"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:backgroundTint="#FF9800"
+                app:cornerRadius="8dp" />
+
+            <Button
+                android:id="@+id/btnCreateSessionalTitle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="15dp"
+                android:text="Create Sessional Title"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:backgroundTint="#E91E63"
+                app:cornerRadius="8dp" />
+
+            <Button
+                android:id="@+id/btnCreatePassword"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="15dp"
+                android:text="Create Password"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:backgroundTint="#607D8B"
+                app:cornerRadius="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -8,38 +8,37 @@
     tools:context=".Activity.Notification.NotificationActivity">
 
     <TextView
+        android:id="@+id/notification_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="Notification"
-        android:textSize="28sp"
+        android:textSize="22sp"
         android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/view2"
-        android:layout_width="300dp"
-        android:layout_height="9dp"
-        android:layout_marginTop="50dp"
+        android:layout_width="200dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/round_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/notification_title" />
 
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcNotice"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="70dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/view2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

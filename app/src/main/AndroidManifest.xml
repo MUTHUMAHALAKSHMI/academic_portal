@@ -1,18 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.coetusstudio.iimtustudent">
+    package="com.coetusstudio.academicportal">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
 
     <application
+        android:name=".AcademicPortalApp"
         android:allowBackup="true"
-        android:icon="@drawable/iimtulogo"
+        android:icon="@drawable/img"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/iimtulogo"
+        android:roundIcon="@drawable/img"
         android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:theme="@style/Theme.IIMTUStudent">
+
+        <activity
+            android:name=".Activity.Faculty.PrincipalDashboardActivity"
+            android:exported="false"
+            android:theme="@style/Theme.IIMTUStudent.NoActionBar" />
+
+        <activity
+            android:name=".Activity.Faculty.PrincipalMainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.IIMTUStudent.NoActionBar" />
+
+        <activity
+            android:name=".Activity.Faculty.AdministratorActivity"
+            android:exported="false"
+            android:theme="@style/Theme.IIMTUStudent.NoActionBar" />
+
+        <activity
+            android:name=".Activity.Faculty.CreateBranchActivity"
+            android:exported="false"
+            android:theme="@style/Theme.IIMTUStudent.NoActionBar" />
+
+        <activity
+            android:name=".Activity.Faculty.CreateSemesterActivity"
+            android:exported="false"
+            android:theme="@style/Theme.IIMTUStudent.NoActionBar" />
+
+        <activity
+            android:name=".Activity.Faculty.CreateSectionActivity"
+            android:exported="false"
+            android:theme="@style/Theme.IIMTUStudent.NoActionBar" />
+
+        <activity
+            android:name=".Activity.Faculty.CreateSubjectActivity"
+            android:exported="false"
+            android:theme="@style/Theme.IIMTUStudent.NoActionBar" />
+
+        <activity
+            android:name=".Activity.Faculty.CreateSessionalTitleActivity"
+            android:exported="false"
+            android:theme="@style/Theme.IIMTUStudent.NoActionBar" />
+
+        <activity
+            android:name=".Activity.Faculty.UpdatePasswordActivity"
+            android:exported="false"
+            android:theme="@style/Theme.IIMTUStudent.NoActionBar" />
+
+        <activity
+            android:name=".Activity.Faculty.SettingsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.IIMTUStudent.NoActionBar" />
+
+        <activity
+            android:name=".Activity.Faculty.HODMainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.IIMTUStudent.NoActionBar" />
+
+        <activity
+            android:name=".Activity.Faculty.HODProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.IIMTUStudent.NoActionBar" />
+
+        <activity
+            android:name=".Activity.Faculty.FacultyMainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.IIMTUStudent.NoActionBar" />
+
+        <activity
+            android:name=".Activity.Faculty.FacultyProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.IIMTUStudent.NoActionBar" />
+
+        <activity
+            android:name=".Activity.Faculty.AddFacultyActivity"
+            android:exported="false"
+            android:theme="@style/Theme.IIMTUStudent.NoActionBar" />
+
+        <activity
+            android:name=".Activity.Faculty.UpdateFacultyActivity"
+            android:exported="false"
+            android:theme="@style/Theme.IIMTUStudent.NoActionBar" />
+
+        <activity
+            android:name=".Activity.Faculty.ManageFacultyDataActivity"
+            android:exported="false"
+            android:theme="@style/Theme.IIMTUStudent.NoActionBar" />
+
+        <activity
+            android:name=".Activity.Faculty.ManageFacultyListActivity"
+            android:exported="false"
+            android:theme="@style/Theme.IIMTUStudent.NoActionBar" />
+
+        <activity
+            android:name=".Activity.Faculty.ManageHODActivity"
+            android:exported="false"
+            android:theme="@style/Theme.IIMTUStudent.NoActionBar" />
+
+        <activity
+            android:name=".Activity.Faculty.HodManagementActivity"
+            android:exported="false"
+            android:theme="@style/Theme.IIMTUStudent.NoActionBar" />
+
+        <activity
+            android:name=".Activity.Faculty.AddHODActivity"
+            android:exported="false"
+            android:theme="@style/Theme.IIMTUStudent.NoActionBar" />
+
         <activity
             android:name=".VerifiyActivity"
             android:exported="false" />
@@ -26,26 +136,84 @@
             android:name=".Activity.Attendance.SelectSubjectAttendance"
             android:exported="false" />
         <activity
+            android:name=".Activity.Attendance.ManageAttendanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Attendance.MarkAttendanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Attendance.TakeAttendanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Attendance.ViewAttendanceFacultyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Attendance.UpdateAttendanceFacultyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Attendance.DeleteAttendanceFacultyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Attendance.DownloadAttendanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Attendance.DayWiseAttendanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Attendance.CollectiveAttendanceActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.Notification.ImageViewActivity"
             android:exported="false" />
         <activity
             android:name=".Activity.Marks.Sessional_Assignment_Marks"
             android:exported="false" />
+
+        <activity
+            android:name=".Activity.Marks.UploadMarksActivity"
+            android:exported="false" />
+
         <activity
             android:name=".Activity.Notes.ViewpdfActivity"
             android:exported="false" />
         <activity
             android:name=".Activity.Queries.QueriesActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".Activity.Queries.ResolveQueriesActivity"
+            android:exported="false" />
+
         <activity
             android:name=".Activity.Notification.NotificationActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".Activity.Notification.UploadNoticeActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.Notes.UploadNotesActivity"
+            android:exported="false" />
+
         <activity
             android:name=".Activity.Lecture.LectureActivity"
             android:exported="false"
             android:theme="@style/Theme.IIMTUStudentAction" />
         <activity
             android:name=".Activity.Students.StudentdetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Students.AddStudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Students.ManageStudentDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Students.ViewStudentDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Students.UpdateStudentDataActivity"
             android:exported="false" />
         <activity
             android:name=".Activity.Attendance.AttendanceActivity"

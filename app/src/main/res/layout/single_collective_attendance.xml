@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tvCollName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prem Kumar"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvCollRoll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2162017050"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tvCollAtt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attendance: 10/15"
+                android:textColor="@color/black"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:id="@+id/tvCollAbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Absent: 5"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCollPerc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Percentage: 66.0 %"
+            android:textColor="#3F51B5"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

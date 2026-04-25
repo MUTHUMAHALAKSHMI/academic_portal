@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="280dp"
+    android:layout_height="220dp"
     android:gravity="bottom"
     android:orientation="vertical"
     android:padding="20dp"
@@ -16,8 +16,8 @@
         android:orientation="horizontal">
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/studentImageProfile"
-            android:layout_width="135dp"
-            android:layout_height="130dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             app:civ_border_color="#FF000000"
             app:civ_border_width="1.5dp"
             android:src="@drawable/manimg" />
@@ -27,6 +27,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:orientation="horizontal">
 
         <TextView
@@ -34,9 +35,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18sp"
-            android:textStyle="normal"
-            android:layout_marginTop="3dp"
-            android:text="Student Name"
+            android:textStyle="bold"
+            android:text="Name"
             android:layout_marginLeft="3dp"
             android:textColor="#fff" />
 
@@ -53,7 +53,7 @@
             android:layout_height="wrap_content"
             android:textSize="14sp"
             android:layout_marginTop="3dp"
-            android:text="Student Name"
+            android:text="Email Address"
             android:layout_marginLeft="3dp"
             android:textColor="#fff" />
 
@@ -62,6 +62,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:orientation="horizontal">
 
         <TextView
@@ -70,7 +71,7 @@
             android:layout_height="wrap_content"
             android:textSize="14sp"
             android:layout_marginTop="3dp"
-            android:text="Student Name"
+            android:text="Roll Number"
             android:layout_marginLeft="3dp"
             android:textColor="#fff" />
 

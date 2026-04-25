@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgactivity"
+    tools:context=".Activity.Students.UpdateStudentDataActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update and Delete Student Data"
+            android:background="#BA8CD7"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/updateName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/updateEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Id"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/updateRoll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Roll No."
+            android:layout_marginBottom="10dp"
+            android:enabled="false"/>
+
+        <EditText
+            android:id="@+id/updateAdmission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Admission No."
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/updateEnrollment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enrollment No."
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/updateBranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Branch"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/updateSemester"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Semester"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/updateSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Section"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/updateGrade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Grade"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnUpdateDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UPDATE DETAILS"
+            android:backgroundTint="#039BE5"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+</ScrollView>
